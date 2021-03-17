@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <UserSecretsId>f236c19c-f535-409c-972f-8f1a1e31c7d6</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="C:\Users\maruma\.nuget\packages\microsoft.azure.webjobs.extensions.openapi\0.5.1-preview\contentFiles\any\netstandard2.0\OpenApi\IOpenApiHttpTriggerContext.cs" />
+    <Compile Remove="C:\Users\maruma\.nuget\packages\microsoft.azure.webjobs.extensions.openapi\0.5.1-preview\contentFiles\any\netstandard2.0\OpenApi\OpenApiHttpTrigger.cs" />
+    <Compile Remove="C:\Users\maruma\.nuget\packages\microsoft.azure.webjobs.extensions.openapi\0.5.1-preview\contentFiles\any\netstandard2.0\OpenApi\OpenApiHttpTriggerContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.17.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.CosmosDB" Version="3.0.10" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
